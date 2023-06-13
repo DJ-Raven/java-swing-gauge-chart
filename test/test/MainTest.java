@@ -14,6 +14,7 @@ public class MainTest extends javax.swing.JFrame {
     public MainTest() {
         initComponents();
         getContentPane().setBackground(Color.WHITE);
+
     }
 
     /**

@@ -505,7 +505,7 @@ public class GaugeChart extends JComponent {
             animator.stop();
         }
         animator.removeTarget(target);
-        target = new PropertySetter(this, "value", this.value, value);
+        target = new PropertySetter(this, "value", this.value, Math.max(minValue, Math.min(value, maxValue)));
         animator.addTarget(target);
         animator.start();
     }
